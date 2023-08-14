@@ -1,0 +1,79 @@
+/* cart-item.component.scss */
+
+.products {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+
+  .container {
+    max-width: 1200px;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .col-md-4 {
+        flex: 0 0 calc(33.33% - 1rem); /* Equal width for all columns */
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  background-color: #ffffff; /* Card background color */
+  border: 1px solid #e0e0e0; /* Border color */
+
+  .card-img-top {
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: contain;
+  }
+
+  .card-body {
+    padding: 1rem;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333; /* Title color */
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #666; /* Text color */
+    }
+  }
+
+  .mt-auto {
+    padding: 1rem;
+
+    .btn-primary,
+    .btn-danger {
+      width: 100%;
+      margin-top: 0.5rem;
+      background-color: #007bff; /* Primary and danger button background color */
+      border-color: #007bff; /* Primary and danger button border color */
+      color: #ffffff; /* Button text color */
+    }
+
+    .btn-primary:hover,
+    .btn-danger:hover {
+      background-color: #0056b3; /* Button hover background color */
+      border-color: #0056b3; /* Button hover border color */
+    }
+  }
+
+  .d-flex {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    .btn {
+      margin: 0 0.25rem;
+    }
+  }
+}

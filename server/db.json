@@ -1,0 +1,9 @@
+{
+    "users": [],
+    "products": [
+      { "id": 1, "name": "Table", "quantity": 3 },
+      { "id": 2, "name": "Chair", "quantity": 2 },
+      { "id": 3, "name": "Tents", "quantity": 4 }
+    ]
+  }
+  

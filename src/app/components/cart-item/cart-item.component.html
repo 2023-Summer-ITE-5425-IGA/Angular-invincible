@@ -1,0 +1,39 @@
+<div class="item-cart">
+  <div class="content">
+    <img [src]="item.imageURL" />
+    <div>
+      <div class="title">
+        {{ item.title }}
+        <span *ngIf="item.quantity > 1">x{{ item.quantity }}</span>
+      </div>
+
+      <div class="price">
+        ${{ item.price }}
+        <!-- {{formatCurrency(item.price)}} -->
+      </div>
+      <div class="control">
+        <button
+          class="btn btn-outline-dark"
+          (click)="decreaseCartQuantity(item)"
+        >
+          -
+        </button>
+        <div class="amount">
+          <span>
+            {{ item.quantity }}
+          </span>
+          in cart
+        </div>
+        <button class="btn btn-outline-dark" (click)="addToCart(item)">
+          +
+        </button>
+      </div>
+    </div>
+    <div>${{ item.price * item.quantity }}</div>
+    <!-- <div> {{formatCurrency(item.price * item.quantity)}}</div> -->
+
+    <button class="btn btn-danger" (click)="removeFromCart(item)">
+      &times;
+    </button>
+  </div>
+</div>

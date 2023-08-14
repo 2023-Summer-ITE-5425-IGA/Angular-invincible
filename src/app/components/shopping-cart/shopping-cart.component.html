@@ -1,0 +1,29 @@
+<div class="offcanvas-header bg-light">
+  <h5 class="offcanvas-title">Your Cart</h5>
+  <button
+    type="button"
+    class="btn-close text-reset"
+    aria-label="Close"
+    (click)="activeOffcanvas.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="offcanvas-body">
+  <div *ngFor="let e of cartItems" class="mb-3">
+    <app-cart-item [item]="e"></app-cart-item>
+  </div>
+  <div class="total text-center mt-3">
+    <span class="h5">Total: ${{ total }}</span>
+  </div>
+  <div class="d-grid gap-2 mt-4">
+    <button class="btn btn-primary" (click)="activeOffcanvas.close('Close click')" routerLink="/checkout">
+      <span class="material-icons">payment</span> Proceed to Checkout
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="activeOffcanvas.close('Close click')"
+    >
+      <span class="material-icons">close</span> Close
+    </button>
+  </div>
+</div>
