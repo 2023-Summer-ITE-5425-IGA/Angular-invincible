@@ -67,13 +67,6 @@ export class AppService {
     return this.cartItems.filter((item: any) => item.id !== id);
   }
 
-  // private message = new BehaviorSubject<string>('massssry share works');
-  // getMessage = this.message.asObservable();
 
-  // constructor() {  }
-
-  // setMessage(message: string) {
-  //   this.message.next(message)
-  // }
 
 }

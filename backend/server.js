@@ -1,8 +1,14 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const Products = require("./Product.js"); // Assuming you have a "Products" model defined in a separate file
-
+const Products = require("./Product.js");
+const User = require("./User.js");
+ // Assuming you have a "Products" model defined in a separate file
+ const SECRET_KEY = 'secret-key';
+const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const low = require('lowdb');
 const app = express();
 const port = process.env.PORT || 8000;
 
@@ -43,6 +49,33 @@ app.post("/product/add", async (req, res) => {
     }
   });
   
+
+
+  
+app.post('/api/register', async (req, res) => {
+  const { username, password } = req.body;
+  console.log("username>",username," password>",password);
+  try {
+    const userExists = await User.findOne({ username });
+
+    if (userExists) {
+      return res.status(400).json({ message: 'User already exists' });
+    }
+
+    const hashedPassword = bcrypt.hashSync(password, 8);
+    const newUser = new User({ username, password: hashedPassword });
+    await newUser.save();
+
+    const token = jwt.sign({ id: newUser._id }, SECRET_KEY);
+    return res.status(201).json({ auth: true, token });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'An error occurred' });
+  }
+});
+
+
+
 
 // Get all products
 // Get all products

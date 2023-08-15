@@ -9,6 +9,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,8 +18,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'events', component: EventsComponent },
-  
-  
+  { path: 'login', component: LoginComponent },
   { path: 'addproduct', component: AddProductComponent }
 ];
 

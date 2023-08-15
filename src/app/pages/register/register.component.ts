@@ -11,7 +11,7 @@ export class RegisterComponent {
   onSubmit(form: NgForm) {
     console.log('Your form data : ', form.value);
     axios
-      .post("http://localhost:3000/api/register", form.value)
+      .post("http://localhost:8000/api/register", form.value)
       .then((res) => {
         form.resetForm();
         localStorage.setItem('token', res.data.token);
