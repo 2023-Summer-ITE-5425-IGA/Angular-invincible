@@ -16,7 +16,7 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
 
 1. **Add to Cart and Remove from Cart**: Users can add products to their shopping cart with a single click. The cart will update dynamically, displaying the added products and their quantities. Users can also remove products from the cart if they no longer wish to purchase them.
 
-2. **Product Detail**: Users can click on a product to view detailed information, such as descriptions, reviews, and additional images.
+2. **Products**: Users can view the product list from database using API. It views information for all products.
 
 3. **Checkout Process**: Users will be guided through the checkout process, entering their shipping information, selecting payment methods, and placing their order. The application will validate the user's input and provide feedback as necessary.
 
@@ -29,6 +29,9 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
 7. **Login and Registration**: Provides user authentication functionality, allowing users to create accounts, log in, and save their cart for future sessions. Authenticated users may also have access to additional features such as order history.
 
 8. **User Authentication**: In situations where a product is out of stock or if there are issues with the checkout process, appropriate feedback will be displayed to the user.
+
+9. **Add Products**: Using this component users can add their products to Database using API.
+
 
 ## Feature Team Members
 
@@ -45,8 +48,11 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
    - TBA
 
 4. **Parth Panchal**
-   - TBA
-   - TBA
+   - Add Product component using API
+   - UI (Navigation,footer)
+   - Cart component
+   - View Products using API
+   - Backend for the front-end part of adding product, view products
 
 5. **Ketan Chhadej**
    - Login and Registration
