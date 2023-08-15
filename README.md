@@ -44,8 +44,7 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
    - TBA
 
 3. **Niral Patel**
-   - TBA
-   - TBA
+   - News page using API
 
 4. **Parth Panchal**
    - Add Product component using API
