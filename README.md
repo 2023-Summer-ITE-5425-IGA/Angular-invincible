@@ -20,21 +20,21 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
 
 3. **Checkout Process**: Users will be guided through the checkout process, entering their shipping information, selecting payment methods, and placing their order. The application will validate the user's input and provide feedback as necessary.
 
-4. **News Page**: TBA
-
-5. **Events Page**: TBA
-
-6. **Home Page**: TBA
+4. **News Page**: This page is designed to keep users updated with the latest news related to the products or the industry.
+     
+5. **Events Page**: This page showcases upcoming events, webinars, or product launches. Whether it's an in-person event or a digital one, users can get all the necessary details here.
+     
+6. **Home Page**: The landing page of the application, is designed to provide users with a snapshot of the latest trends, featured products, and top news.
 
 7. **Login and Registration**: Provides user authentication functionality, allowing users to create accounts, log in, and save their cart for future sessions. Authenticated users may also have access to additional features such as order history.
 
-8. **Error Handling**: In situations where a product is out of stock or if there are issues with the checkout process, appropriate feedback will be displayed to the user.
+8. **User Authentication**: In situations where a product is out of stock or if there are issues with the checkout process, appropriate feedback will be displayed to the user.
 
 ## Feature Team Members
 
 1. **Mehakpreet Kaur**
-   - News
-   - Events
+   - Home Page
+   - Events page using API
 
 2. **Janvi Kapasi**
    - TBA
