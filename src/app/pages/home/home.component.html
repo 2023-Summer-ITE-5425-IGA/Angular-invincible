@@ -1,1 +1,24 @@
 <h1>Home</h1>
+
+<!-- Displaying the Query Details -->
+<p><strong>Query:</strong> {{data?.query}}</p>
+<p><strong>Language:</strong> {{data?.Language}}</p>
+<p><strong>Country:</strong> {{data?.Country}}</p>
+<p><strong>Time:</strong> {{data?.time}}</p>
+
+<!-- Displaying the Sites Details -->
+<h2>Sites</h2>
+<ul>
+  <li *ngFor="let site of data?.sites[0]">
+    <h3><a [href]="site.link">{{site.title}}</a></h3>
+    <p>{{site.desc}}</p>
+  </li>
+</ul>
+
+<!-- Displaying the PAA Details -->
+<h2>People Also Ask</h2>
+<ul>
+  <li *ngFor="let paaItem of data?.paa">
+    <p>{{paaItem.question}}</p>
+  </li>
+</ul>
