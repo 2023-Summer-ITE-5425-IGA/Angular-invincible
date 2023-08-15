@@ -49,5 +49,5 @@ The app aims to provide a seamless and enjoyable shopping experience for users, 
    - TBA
 
 5. **Ketan Chhadej**
-   - TBA
-   - TBA
+   - Login and Registration
+   - User Authentication
