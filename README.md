@@ -1,8 +1,8 @@
-# Shopping Cart App using React and TypeScript
+# Shopping Cart App using Angular
 
 ## Project Description
 
-The goal of this project is to develop a Shopping Cart application using React.js and TypeScript. The application will provide users with the ability to browse and add products to their cart, manage quantities, and proceed to checkout. It will follow best practices for component architecture, state management, and integration with external APIs.
+The goal of this project is to develop a Shopping Cart application using Angular. The application will provide users with the ability to browse and add products to their cart, manage quantities, and proceed to checkout.
 
 ### Targeted Audience
 
